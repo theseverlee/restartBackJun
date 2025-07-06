@@ -1,6 +1,4 @@
-package back0706_0712;
-
-import com.sun.tools.javac.Main;
+package step1;
 
 import java.util.Scanner;
 

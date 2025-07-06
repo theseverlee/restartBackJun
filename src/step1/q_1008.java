@@ -1,4 +1,4 @@
-package back0706_0712;
+package step1;
 
 import java.util.Scanner;
 
