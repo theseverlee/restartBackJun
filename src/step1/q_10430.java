@@ -33,7 +33,7 @@ public class q_10430 {
         bw.write(String.valueOf((A*B)%C) +"\n");
         bw.write(String.valueOf(((A%C) * (B%C))%C));
 
-        bw.close(); 
+        bw.close();
         br.close();
         osw.close();
         isr.close();
