@@ -25,31 +25,22 @@ public class q_2588 {
         BufferedReader br = new BufferedReader(isr);
         BufferedWriter bw = new BufferedWriter(osw);
 
-        StringTokenizer st = new StringTokenizer(br.readLine());
-        int a1 = Integer.parseInt(st.nextToken());
-        int b1 = Integer.parseInt(st.nextToken());
-        bw.write(String.valueOf(a1));
-        bw.newLine();
-        bw.write(String.valueOf(a1/100));
-        bw.newLine();
-        bw.write(String.valueOf(a1/10));
-        bw.newLine();
-        bw.write(String.valueOf(a1/1));
-
-        bw.newLine();
-        bw.write(String.valueOf(b1));
-
-
+        int a1 = Integer.parseInt(br.readLine());
+        int b1 = Integer.parseInt(br.readLine());
+        int result = 0;
+        for (int i = 0; b1 >0; i++){
+            int as = a1 * (b1%10);
+            bw.write(String.valueOf( as));
+            result += as * ((int)Math.pow(10,i));
+            b1 = b1/10;
+            bw.newLine();
+        }
+        bw.write(String.valueOf(result));
 
         bw.close();
         br.close();
         osw.close();
         isr.close();
-
-
-
-
-
     }
 
 
